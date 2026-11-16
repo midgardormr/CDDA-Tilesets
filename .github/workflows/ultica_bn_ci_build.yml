@@ -11,15 +11,27 @@ on:
       - 'tools/tests/**'
       - '.github/workflows/ultica_bn_ci_build.yml'
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      ref:
+        description: Commit to check without publishing a release
+        type: string
+        default: ''
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     strategy:
+      fail-fast: false
       matrix:
         tileset: [UltimateCataclysm, Chibi_Ultica]
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.sha }}
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -41,7 +53,7 @@ jobs:
 
   release:
     needs: build
-    if: github.ref == 'refs/heads/ultica-bn'
+    if: github.ref == 'refs/heads/ultica-bn' && inputs.ref == ''
     runs-on: ubuntu-latest
     permissions:
       contents: write

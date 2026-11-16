@@ -29,3 +29,13 @@ sheet. Shared Chibi bindings link to the corresponding UltiCa files.
 
 The composer preserves BN metadata and named tint masks. Contextual vehicle
 graphics require the matching renderer support in Bright Nights.
+
+## Upstream updates
+
+**Weekly BN upstream sync** runs every Monday at 07:17 UTC (10:17 Moscow time).
+It updates `master` from upstream, prepares a merge into `ultica-bn`, and runs
+the existing tests and builds for both packs. Only the checked merge is promoted.
+Conflicts and failed checks leave a PR open with a link to the logs.
+
+The workflow can also be run manually from Actions. After a successful update,
+the normal release build runs to publish new archives.
