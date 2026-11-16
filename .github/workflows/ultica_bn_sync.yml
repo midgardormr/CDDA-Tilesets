@@ -32,7 +32,7 @@ jobs:
 
   prepare:
     needs: test
-    if: github.repository == 'midgardormr/CDDA-Tilesets' && github.ref == 'refs/heads/ultica-bn' && github.event_name != 'push'
+    if: github.repository == 'midgardormr/UltiCa-BN' && github.ref == 'refs/heads/ultica-bn' && github.event_name != 'push'
     runs-on: ubuntu-latest
     permissions:
       contents: write

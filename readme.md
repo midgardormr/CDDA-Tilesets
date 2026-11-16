@@ -15,7 +15,7 @@ I also plan to add artwork specifically for BN and address things players find h
 
 ## Downloads and building
 
-Get both packs from [this fork's releases](https://github.com/midgardormr/CDDA-Tilesets/releases). Build instructions and notes on editing bindings are in [doc/ultica-bn.md](doc/ultica-bn.md).
+Get both packs from [this fork's releases](https://github.com/midgardormr/UltiCa-BN/releases). Build instructions and notes on editing bindings are in [doc/ultica-bn.md](doc/ultica-bn.md).
 
 ## License
 
