@@ -9,6 +9,48 @@
     "bn_bindings.png": {}
   },
   {
+    "bn_bindings_x0_ym16.png": {
+      "sprite_offset_x": 0,
+      "sprite_offset_y": -16
+    }
+  },
+  {
+    "bn_bindings_x0_ym32.png": {
+      "sprite_offset_x": 0,
+      "sprite_offset_y": -32
+    }
+  },
+  {
+    "bn_bindings_xm16_ym16.png": {
+      "sprite_offset_x": -16,
+      "sprite_offset_y": -16
+    }
+  },
+  {
+    "bn_bindings_xm16_ym32.png": {
+      "sprite_offset_x": -16,
+      "sprite_offset_y": -32
+    }
+  },
+  {
+    "bn_bindings_xm16_ym48.png": {
+      "sprite_offset_x": -16,
+      "sprite_offset_y": -48
+    }
+  },
+  {
+    "bn_bindings_xm32_ym48.png": {
+      "sprite_offset_x": -32,
+      "sprite_offset_y": -48
+    }
+  },
+  {
+    "bn_bindings_xm64_ym96.png": {
+      "sprite_offset_x": -64,
+      "sprite_offset_y": -96
+    }
+  },
+  {
     "bn_additions_32x64_x0_ym32.png": {
       "sprite_offset_y": -32,
       "sprite_offset_y_retracted": -32,

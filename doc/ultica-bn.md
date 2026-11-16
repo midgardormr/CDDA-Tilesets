@@ -16,7 +16,10 @@ publishes versioned prereleases named `ultica-bn-<commit-prefix>` containing
 the directory names expected by the BN packaging workflow. Existing release
 assets are not replaced when a workflow is rerun.
 
-BN entries are in each pack's `pngs_bn_bindings_32x32/bindings` directory. They use
+BN entries are in each pack's `pngs_bn_bindings*/bindings` directories, grouped
+by their display offsets. The offset belongs to the JSON definition's sheet,
+not to the sheet containing its referenced PNG; keep that distinction when
+reusing sprites across sheets. They use
 sprite names rather than compiled atlas indices. Identical Chibi binding files use
 relative links to the UltiCa entries, following the repository's existing sharing
 convention. Pack-specific artwork and states keep separate sources. Existing source artwork remains

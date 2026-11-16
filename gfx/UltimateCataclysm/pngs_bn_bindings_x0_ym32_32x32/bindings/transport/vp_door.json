@@ -1,0 +1,66 @@
+{
+  "id": "vp_door",
+  "fg": [
+    "vp_door_interior_rotN",
+    "vp_door_interior_rotW",
+    "vp_door_interior_rotS",
+    "vp_door_interior_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "vp_door_interior_rotN_open",
+        "vp_door_interior_open_rotW",
+        "vp_door_interior_rotS_open",
+        "vp_door_interior_open_rotE"
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_door_interior_rotN_open",
+        "vp_door_interior_open_rotW",
+        "vp_door_interior_rotS_open",
+        "vp_door_interior_open_rotE"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "door",
+    "tiles": {
+      "front_left": "vp_door_front_left",
+      "front_right": "vp_door_front_right",
+      "rear_left": "vp_door_rear_left",
+      "rear_right": "vp_door_rear_right",
+      "left": "vp_door_full_left",
+      "right": "vp_door_full_right",
+      "box_left": "vp_door_full_left",
+      "box_right": "vp_door_full_right",
+      "front": "vp_door_front",
+      "rear": "vp_door_rear",
+      "inset_left": "vp_door_rear_left",
+      "inset_right": "vp_door_rear_right",
+      "narrow_left": "vp_door_left",
+      "narrow_right": "vp_door_right",
+      "cab_corner_left": "vp_door_nw",
+      "cab_corner_right": "vp_door_ne",
+      "control_bay_side_right": "vp_door_right",
+      "split_rear_door": "vp_door_rear",
+      "body_left": "vp_door_full_left",
+      "body_right": "vp_door_full_right",
+      "box_gate": "vp_door_horizontal_rear",
+      "crew_front_left": "vp_door_nw",
+      "crew_front_right": "vp_door_ne",
+      "crew_rear_left": "vp_door_sw",
+      "crew_rear_right": "vp_door_se"
+    }
+  }
+}
