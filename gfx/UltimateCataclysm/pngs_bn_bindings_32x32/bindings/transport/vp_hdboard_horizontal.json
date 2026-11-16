@@ -1,0 +1,21 @@
+{
+  "id": "vp_hdboard_horizontal",
+  "fg": "vp_hdboard_horizontal_front",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "vp_hdboard_horizontal_front"
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "panel",
+    "tiles": {
+      "front": "vp_hdboard_horizontal_front",
+      "rear": "vp_hdboard_horizontal_rear",
+      "exterior": "vp_bn_roof_surface",
+      "partition": "vp_hdboard_horizontal"
+    }
+  }
+}

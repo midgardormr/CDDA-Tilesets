@@ -1,0 +1,36 @@
+{
+  "id": "vp_bn_exterior_solid_door_shutter_rear",
+  "fg": [
+    "vp_door_shutter_faceN",
+    "vp_door_shutter_faceW",
+    "bn_vp_bn_exterior_solid_door_shutter_front_fg_0",
+    "vp_door_shutter_faceE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "vp_door_shutter_open_faceN",
+        "vp_door_shutter_open_faceW",
+        "bn_vp_bn_exterior_solid_door_shutter_front_additional_tiles_0_fg_0",
+        "vp_door_shutter_open_faceE"
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_door_shutter_open_faceN",
+        "vp_door_shutter_open_faceW",
+        "bn_vp_bn_exterior_solid_door_shutter_front_additional_tiles_0_fg_0",
+        "vp_door_shutter_open_faceE"
+      ]
+    }
+  ]
+}

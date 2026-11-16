@@ -1,0 +1,29 @@
+{
+  "id": "vp_stowboard_ne",
+  "fg": [
+    "vp_stowboard_ne",
+    "vp_stowboard_ne_rotW",
+    "vp_stowboard_ne_rotS",
+    "vp_stowboard_ne_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_stowboard_ne",
+        "vp_stowboard_ne_rotW",
+        "vp_stowboard_ne_rotS",
+        "vp_stowboard_ne_rotE"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "corner",
+    "tiles": {
+      "box_front_solid_left": "vp_stowboard_nw",
+      "box_front_solid_right": "vp_stowboard_ne"
+    }
+  }
+}

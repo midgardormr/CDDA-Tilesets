@@ -1,0 +1,27 @@
+{
+  "id": "vp_bn_roof_surface",
+  "fg": [
+    "vp_halfboard_horizontal_front",
+    "vp_halfboard_horizontal_front",
+    "vp_halfboard_horizontal_front",
+    "vp_halfboard_horizontal_front"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_halfboard_horizontal_front",
+        "vp_halfboard_horizontal_front",
+        "vp_halfboard_horizontal_front",
+        "vp_halfboard_horizontal_front"
+      ]
+    }
+  ]
+}

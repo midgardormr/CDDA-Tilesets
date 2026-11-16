@@ -1,0 +1,27 @@
+{
+  "id": "vp_halfboard_horizontal_rear",
+  "fg": [
+    "vp_halfboard_horizontal_rear",
+    "vp_halfboard_horizontal_rear_rotW",
+    "vp_halfboard_horizontal_rear_rotS",
+    "vp_halfboard_horizontal_rear_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_halfboard_horizontal_rear",
+        "vp_halfboard_horizontal_rear_rotW",
+        "vp_halfboard_horizontal_rear_rotS",
+        "vp_halfboard_horizontal_rear_rotE"
+      ]
+    }
+  ]
+}

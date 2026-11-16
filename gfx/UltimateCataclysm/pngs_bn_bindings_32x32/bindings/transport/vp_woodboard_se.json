@@ -1,0 +1,22 @@
+{
+  "id": "vp_woodboard_se",
+  "fg": [
+    "vp_woodboard_se_rotN_nw_rotS",
+    "vp_woodboard_se_rotW_nw_rotE",
+    "vp_woodboard_nw_rotN_se_rotS",
+    "vp_woodboard_nw_rotw_se_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_woodboard_se_rotN_nw_rotS",
+        "vp_woodboard_se_rotW_nw_rotE",
+        "vp_woodboard_nw_rotN_se_rotS",
+        "vp_woodboard_nw_rotw_se_rotE"
+      ]
+    }
+  ]
+}

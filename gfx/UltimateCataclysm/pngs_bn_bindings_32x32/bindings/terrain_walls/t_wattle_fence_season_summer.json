@@ -1,0 +1,56 @@
+{
+  "id": "t_wattle_fence_season_summer",
+  "fg": "t_wattle_fence_unconnected",
+  "bg": "t_grass_summer",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "center",
+      "fg": "t_wattle_fence_center",
+      "bg": "t_grass_summer"
+    },
+    {
+      "id": "corner",
+      "fg": [
+        "t_wattle_fence_corner_nw",
+        "t_wattle_fence_corner_sw",
+        "t_wattle_fence_corner_se",
+        "t_wattle_fence_corner_ne"
+      ],
+      "bg": "t_grass_summer"
+    },
+    {
+      "id": "t_connection",
+      "fg": [
+        "t_wattle_fence_t_connection_n",
+        "t_wattle_fence_t_connection_w",
+        "t_wattle_fence_t_connection_s",
+        "t_wattle_fence_t_connection_e"
+      ],
+      "bg": "t_grass_summer"
+    },
+    {
+      "id": "edge",
+      "fg": [
+        "t_wattle_fence_edge_ns",
+        "t_wattle_fence_edge_ew"
+      ],
+      "bg": "t_grass_summer"
+    },
+    {
+      "id": "end_piece",
+      "fg": [
+        "t_wattle_fence_end_piece_n",
+        "t_wattle_fence_end_piece_w",
+        "t_wattle_fence_end_piece_s",
+        "t_wattle_fence_end_piece_e"
+      ],
+      "bg": "t_grass_summer"
+    },
+    {
+      "id": "unconnected",
+      "fg": "t_wattle_fence_unconnected",
+      "bg": "t_grass_summer"
+    }
+  ]
+}

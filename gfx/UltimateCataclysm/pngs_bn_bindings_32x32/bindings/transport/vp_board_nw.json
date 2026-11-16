@@ -1,0 +1,42 @@
+{
+  "id": "vp_board_nw",
+  "fg": [
+    "vp_board_ne_rotW",
+    "vp_board_nw_rotW",
+    "vp_board_nw_rotS",
+    "vp_board_ne"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_board_ne_rotW",
+        "vp_board_nw_rotW",
+        "vp_board_nw_rotS",
+        "vp_board_ne"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "corner",
+    "tiles": {
+      "front_left": "vp_board_nw",
+      "front_right": "vp_board_ne",
+      "rear_left": "vp_board_sw",
+      "rear_right": "vp_board_se",
+      "left": "vp_board_vertical_left",
+      "right": "vp_board_vertical_right",
+      "box_front_left": "vp_board_nw_edge",
+      "box_front_right": "vp_board_ne_edge",
+      "box_front_solid_left": "vp_board_nw",
+      "box_front_solid_right": "vp_board_ne"
+    }
+  }
+}

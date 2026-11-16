@@ -1,0 +1,75 @@
+{
+  "id": "vp_hddoor_full_rear_right",
+  "fg": [
+    "vp_hddoor_R_rotN",
+    "vp_hddoor_R_rotW",
+    "vp_hddoor_R_rotS",
+    "vp_hddoor_L_rotW"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "vp_hddoor_right_open_rotN",
+        "vp_hddoor_right_open_rotW",
+        "vp_hddoor_right_open_rotS",
+        "vp_hddoor_right_open_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": [
+            "bn_vp_hddoor_full_front_right_masks_0_fg_0",
+            "bn_vp_hddoor_full_front_right_masks_0_fg_1",
+            "bn_vp_hddoor_full_front_right_masks_0_fg_2",
+            "bn_vp_hddoor_full_front_right_masks_0_fg_3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_hddoor_right_open_rotN",
+        "vp_hddoor_right_open_rotW",
+        "vp_hddoor_right_open_rotS",
+        "vp_hddoor_right_open_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": [
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0"
+          ],
+          "bg": [
+            "bn_vp_hddoor_full_front_right_masks_0_fg_0",
+            "bn_vp_hddoor_full_front_right_masks_0_fg_1",
+            "bn_vp_hddoor_full_front_right_masks_0_fg_2",
+            "bn_vp_hddoor_full_front_right_masks_0_fg_3"
+          ]
+        }
+      ]
+    }
+  ],
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_hddoor_masks_0_fg_2_9a73ce",
+        "bn_vp_hddoor_masks_0_fg_3_974492",
+        "bn_vp_hddoor_masks_0_fg_0_facd4e",
+        "bn_vp_hddoor_masks_0_fg_1_9dc201"
+      ]
+    }
+  ]
+}

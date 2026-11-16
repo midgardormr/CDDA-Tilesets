@@ -1,0 +1,52 @@
+{
+  "id": "f_dumpster",
+  "fg": "f_dumpster_end_n",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "center",
+      "fg": "f_dumpster_edge_ew"
+    },
+    {
+      "id": "corner",
+      "fg": [
+        "f_dumpster_end_w",
+        "f_dumpster_end_w",
+        "f_dumpster_end_e",
+        "f_dumpster_end_e"
+      ]
+    },
+    {
+      "id": "t_connection",
+      "fg": [
+        "f_dumpster_edge_ew",
+        "f_dumpster_end_w",
+        "f_dumpster_edge_ew",
+        "f_dumpster_end_e"
+      ]
+    },
+    {
+      "id": "edge",
+      "fg": [
+        "f_dumpster_end_n",
+        "f_dumpster_edge_ew"
+      ]
+    },
+    {
+      "id": "end_piece",
+      "fg": [
+        "f_dumpster_end_n",
+        "f_dumpster_end_w",
+        "f_dumpster_end_n",
+        "f_dumpster_end_e"
+      ]
+    },
+    {
+      "id": "unconnected",
+      "fg": [
+        "f_dumpster_end_n",
+        "f_dumpster_end_n"
+      ]
+    }
+  ]
+}

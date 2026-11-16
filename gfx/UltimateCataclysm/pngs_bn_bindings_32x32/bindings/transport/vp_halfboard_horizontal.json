@@ -1,0 +1,40 @@
+{
+  "id": "vp_halfboard_horizontal",
+  "fg": [
+    "vp_halfboard_horizontal_rotN",
+    "vp_halfboard_horizontal_rotE",
+    "vp_halfboard_horizontal_rotS",
+    "vp_halfboard_horizontal_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_halfboard_horizontal_rotN",
+        "vp_halfboard_horizontal_rotE",
+        "vp_halfboard_horizontal_rotS",
+        "vp_halfboard_horizontal_rotE"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "cover",
+    "tiles": {
+      "cover_left": "vp_halfboard_cover_left",
+      "cover_right": "vp_halfboard_cover_right",
+      "center": "vp_halfboard_cover",
+      "rear_wide": "vp_halfboard_horizontal_2_rear",
+      "rear_left": "vp_halfboard_sw",
+      "rear_right": "vp_halfboard_se",
+      "side_left": "vp_halfboard_vertical_left",
+      "side_right": "vp_halfboard_vertical_right"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "vp_reclining_seat",
+  "fg": [
+    "vp_seat_up",
+    "vp_seat_left",
+    "vp_seat_down",
+    "vp_seat_right"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_seat_up",
+        "vp_seat_left",
+        "vp_seat_down",
+        "vp_seat_right"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "seat",
+    "tiles": {
+      "windshield": "vp_reclining_seat_windshield",
+      "inset_windshield": "vp_reclining_seat_windshield"
+    }
+  }
+}

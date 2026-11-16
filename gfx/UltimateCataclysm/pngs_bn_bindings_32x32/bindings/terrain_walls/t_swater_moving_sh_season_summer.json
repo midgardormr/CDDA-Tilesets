@@ -1,0 +1,73 @@
+{
+  "id": "t_swater_moving_sh_season_summer",
+  "multitile": true,
+  "fg": "t_water_moving_sh_unconnected",
+  "bg": "t_grass_summer",
+  "additional_tiles": [
+    {
+      "id": "center",
+      "bg": "t_grass_summer",
+      "fg": [
+        {
+          "weight": 1,
+          "sprite": "river_c_not_ne"
+        },
+        {
+          "weight": 1,
+          "sprite": "river_c_not_nw"
+        },
+        {
+          "weight": 1,
+          "sprite": "river_c_not_se"
+        },
+        {
+          "weight": 1,
+          "sprite": "river_c_not_sw"
+        }
+      ]
+    },
+    {
+      "id": "corner",
+      "bg": "t_grass_summer",
+      "fg": [
+        "river_nw",
+        "river_sw",
+        "river_se",
+        "river_ne"
+      ]
+    },
+    {
+      "id": "t_connection",
+      "bg": "t_grass_summer",
+      "fg": [
+        "river_north",
+        "river_west",
+        "river_south",
+        "river_east"
+      ]
+    },
+    {
+      "id": "edge",
+      "bg": "t_grass_summer",
+      "fg": [
+        "t_water_moving_sh_edge_ns",
+        "t_water_moving_sh_edge_ew"
+      ]
+    },
+    {
+      "id": "end_piece",
+      "bg": "t_grass_summer",
+      "fg": [
+        "t_water_moving_sh_end_piece_n",
+        "t_water_moving_sh_end_piece_w",
+        "t_water_moving_sh_end_piece_s",
+        "t_water_moving_sh_end_piece_e"
+      ]
+    },
+    {
+      "bg": "t_grass_summer",
+      "id": "unconnected",
+      "fg": "t_water_moving_sh_unconnected"
+    }
+  ]
+}

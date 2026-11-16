@@ -1,0 +1,31 @@
+{
+  "id": "vp_hdhatch_opaque",
+  "fg": [
+    "vp_hddoor_trunk",
+    "vp_hddoor_trunk_rotW",
+    "vp_hddoor_trunk_rotS",
+    "vp_hddoor_trunk_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "vp_hddoor_trunk_open",
+        "vp_hddoor_trunk_open_rotW",
+        "vp_hddoor_trunk_open",
+        "vp_hddoor_trunk_open_rotE"
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_hddoor_trunk_open",
+        "vp_hddoor_trunk_open_rotW",
+        "vp_hddoor_trunk_open",
+        "vp_hddoor_trunk_open_rotE"
+      ]
+    }
+  ]
+}

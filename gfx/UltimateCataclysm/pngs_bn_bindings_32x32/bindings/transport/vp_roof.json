@@ -1,0 +1,18 @@
+{
+  "id": "vp_roof",
+  "fg": "1799_vp_roof_0",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "1799_vp_roof_0"
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "panel",
+    "tiles": {
+      "exterior": "vp_bn_roof_surface"
+    }
+  }
+}

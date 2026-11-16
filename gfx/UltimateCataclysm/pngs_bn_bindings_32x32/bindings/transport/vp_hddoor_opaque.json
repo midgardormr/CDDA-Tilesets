@@ -1,0 +1,51 @@
+{
+  "id": "vp_hddoor_opaque",
+  "fg": [
+    "vp_hddoor_opaque_left_rotN",
+    "vp_hddoor_opaque_left_rotW",
+    "vp_hddoor_opaque_left_rotS",
+    "vp_hddoor_opaque_left_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "vp_hddoor_opaque_left_open_rotN",
+        "vp_hddoor_opaque_left_open_rotW",
+        "vp_hddoor_opaque_left_open_rotS",
+        "vp_hddoor_opaque_left_open_rotE"
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_hddoor_opaque_left_open_rotN",
+        "vp_hddoor_opaque_left_open_rotW",
+        "vp_hddoor_opaque_left_open_rotS",
+        "vp_hddoor_opaque_left_open_rotE"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "door",
+    "tiles": {
+      "left": "vp_hddoor_opaque_left",
+      "right": "vp_hddoor_opaque_right",
+      "front_left": "vp_hddoor_opaque_left",
+      "front_right": "vp_hddoor_opaque_right",
+      "rear_left": "vp_hddoor_opaque_left",
+      "rear_right": "vp_hddoor_opaque_right",
+      "box_left": "vp_hddoor_opaque_left",
+      "box_right": "vp_hddoor_opaque_right",
+      "front": "vp_hddoor_opaque_front",
+      "rear": "vp_hddoor_opaque_rear"
+    }
+  }
+}

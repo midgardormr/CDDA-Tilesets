@@ -1,0 +1,10 @@
+{
+  "id": "bridgehead_ramp",
+  "fg": [
+    "bridgehead_ramp_faceN",
+    "bridgehead_ramp_faceW",
+    "bridgehead_ramp_faceS",
+    "bridgehead_ramp_faceE"
+  ],
+  "rotates": true
+}

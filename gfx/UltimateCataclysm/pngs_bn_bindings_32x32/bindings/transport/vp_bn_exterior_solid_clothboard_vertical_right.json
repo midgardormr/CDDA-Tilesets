@@ -1,0 +1,27 @@
+{
+  "id": "vp_bn_exterior_solid_clothboard_vertical_right",
+  "fg": [
+    "vp_clothboard_horizontal_front_rotE",
+    "vp_clothboard_horizontal_rear_rotS",
+    "vp_clothboard_horizontal_front_rotW",
+    "bn_vp_bn_exterior_solid_clothboard_vertical_left_fg_1"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_clothboard_horizontal_front_rotE",
+        "vp_clothboard_horizontal_rear_rotS",
+        "vp_clothboard_horizontal_front_rotW",
+        "bn_vp_bn_exterior_solid_clothboard_vertical_left_fg_1"
+      ]
+    }
+  ]
+}

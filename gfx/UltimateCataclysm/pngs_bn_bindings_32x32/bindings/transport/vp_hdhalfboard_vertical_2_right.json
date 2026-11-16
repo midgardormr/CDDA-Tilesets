@@ -1,0 +1,22 @@
+{
+  "id": "vp_hdhalfboard_vertical_2_right",
+  "fg": [
+    "vp_hdhalfboard_vertical_2_right",
+    "vp_hdhalfboard_vertical_left_rotE",
+    "vp_hdhalfboard_vertical_left",
+    "vp_hdhalfboard_vertical_left_rotW"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_hdhalfboard_vertical_2_right",
+        "vp_hdhalfboard_vertical_left_rotE",
+        "vp_hdhalfboard_vertical_left",
+        "vp_hdhalfboard_vertical_left_rotW"
+      ]
+    }
+  ]
+}

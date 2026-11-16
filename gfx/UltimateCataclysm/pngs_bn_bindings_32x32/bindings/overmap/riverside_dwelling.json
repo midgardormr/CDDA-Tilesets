@@ -1,0 +1,11 @@
+{
+  "id": "riverside_dwelling",
+  "fg": [
+    "cabin_faceN",
+    "cabin_faceW",
+    "cabin_faceS",
+    "cabin_faceE"
+  ],
+  "bg": "field",
+  "rotates": true
+}

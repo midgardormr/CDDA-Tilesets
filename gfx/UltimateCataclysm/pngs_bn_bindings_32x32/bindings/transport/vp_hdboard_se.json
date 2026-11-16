@@ -1,0 +1,57 @@
+{
+  "id": "vp_hdboard_se",
+  "fg": [
+    "vp_hdboard_se",
+    "vp_hdboard_se_rotW",
+    "vp_hdboard_nw",
+    "vp_hdboard_se_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_hdboard_se",
+        "vp_hdboard_se_rotW",
+        "vp_hdboard_nw",
+        "vp_hdboard_se_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "bg": [
+            "bn_vp_hdboard_se_masks_0_bg_0",
+            "bn_vp_hdboard_se_masks_0_bg_1",
+            "bn_vp_hdboard_se_masks_0_bg_2",
+            "bn_vp_hdboard_se_masks_0_bg_3"
+          ]
+        }
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "corner",
+    "tiles": {
+      "front_left": "vp_hdboard_nw",
+      "front_right": "vp_hdboard_ne",
+      "rear_left": "vp_hdboard_sw",
+      "rear_right": "vp_hdboard_se",
+      "left": "vp_hdboard_vertical_left",
+      "right": "vp_hdboard_vertical_right",
+      "box_front_solid_left": "vp_hdboard_nw",
+      "box_front_solid_right": "vp_hdboard_ne"
+    }
+  },
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_hdboard_se_masks_0_bg_0",
+        "bn_vp_hdboard_se_masks_0_bg_1",
+        "bn_vp_hdboard_se_masks_0_bg_2",
+        "bn_vp_hdboard_se_masks_0_bg_3"
+      ]
+    }
+  ]
+}

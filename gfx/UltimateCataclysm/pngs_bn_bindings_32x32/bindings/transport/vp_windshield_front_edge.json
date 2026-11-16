@@ -1,0 +1,72 @@
+{
+  "id": "vp_windshield_front_edge",
+  "fg": [
+    "vp_windshield_horizontal",
+    "vp_windshield_horizontal_rotW",
+    "vp_windshield_horizontal_rotS",
+    "vp_windshield_cover_left_rotE"
+  ],
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_glass_center_32x48",
+        "crack_glass_center_32x48",
+        "crack_glass_center_32x48",
+        "crack_glass_center_32x48"
+      ],
+      "bg": [
+        "vp_windshield_horizontal",
+        "vp_windshield_horizontal_rotW",
+        "vp_windshield_horizontal_rotS",
+        "vp_windshield_cover_left_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": [
+            "bn_vp_windshield_masks_0_fg_0",
+            "bn_vp_windshield_masks_0_fg_0",
+            "bn_vp_windshield_masks_0_fg_0",
+            "bn_vp_windshield_masks_0_fg_0"
+          ],
+          "bg": [
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0"
+          ]
+        }
+      ]
+    }
+  ],
+  "multitile": true,
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "windshield",
+    "tiles": {
+      "left": "vp_windshield_nw",
+      "right": "vp_windshield_ne",
+      "cover_left": "vp_windshield_cover_left",
+      "cover_right": "vp_windshield_cover_right",
+      "center": "vp_windshield_horizontal_front",
+      "side_left": "vp_windshield_vertical_left",
+      "side_right": "vp_windshield_vertical_right",
+      "rear_center": "vp_windshield_horizontal_rear",
+      "inset_rear_left": "vp_windshield_vertical_left",
+      "inset_rear_right": "vp_windshield_vertical_right",
+      "wheel_left": "vp_windshield_wheel_left",
+      "wheel_right": "vp_windshield_wheel_right"
+    }
+  }
+}

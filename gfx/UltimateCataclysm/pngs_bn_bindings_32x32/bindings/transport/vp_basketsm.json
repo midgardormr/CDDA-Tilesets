@@ -1,0 +1,24 @@
+{
+  "id": "vp_basketsm",
+  "fg": [
+    "vp_basketsm_rotNrotS",
+    "vp_basketsm_rotErotW"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_basketsm_rotNrotS",
+        "vp_basketsm_rotErotW"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "frame",
+    "tiles": {
+      "wheelchair": "vp_basketsm_wheelchair"
+    }
+  }
+}

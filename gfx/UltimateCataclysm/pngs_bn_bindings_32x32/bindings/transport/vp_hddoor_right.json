@@ -1,0 +1,78 @@
+{
+  "id": "vp_hddoor_right",
+  "fg": [
+    "bn_vp_hddoor_right_fg_0",
+    "bn_vp_hddoor_right_fg_1",
+    "bn_vp_hddoor_right_fg_2",
+    "bn_vp_hddoor_right_fg_3"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "bn_vp_hddoor_right_additional_tiles_0_fg_0",
+        "bn_vp_hddoor_right_additional_tiles_0_fg_1",
+        "bn_vp_hddoor_right_additional_tiles_0_fg_2",
+        "bn_vp_hddoor_right_additional_tiles_0_fg_3"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": [
+            "bn_vp_hddoor_right_masks_0_fg_0",
+            "bn_vp_hddoor_right_masks_0_fg_1",
+            "bn_vp_hddoor_right_masks_0_fg_2",
+            "bn_vp_hddoor_right_masks_0_fg_3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": "bn_vp_hddoor_right_additional_tiles_1_fg",
+      "bg": [
+        "bn_vp_hddoor_right_additional_tiles_0_fg_0",
+        "bn_vp_hddoor_right_additional_tiles_0_fg_1",
+        "bn_vp_hddoor_right_additional_tiles_0_fg_2",
+        "bn_vp_hddoor_right_additional_tiles_0_fg_3"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": "bn_vp_hddoor_right_1_masks_0_fg",
+          "bg": [
+            "bn_vp_hddoor_right_masks_0_fg_0",
+            "bn_vp_hddoor_right_masks_0_fg_1",
+            "bn_vp_hddoor_right_masks_0_fg_2",
+            "bn_vp_hddoor_right_masks_0_fg_3"
+          ]
+        }
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "door",
+    "tiles": {
+      "left": "vp_hddoor_left",
+      "right": "vp_hddoor_right",
+      "front_left": "vp_hddoor_left",
+      "front_right": "vp_hddoor_right",
+      "rear_left": "vp_hddoor_left",
+      "rear_right": "vp_hddoor_right",
+      "box_left": "vp_hddoor_left",
+      "box_right": "vp_hddoor_right"
+    }
+  },
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_hddoor_right_masks_0_fg_0_1e8444",
+        "bn_vp_hddoor_right_masks_0_fg_1_23c165",
+        "bn_vp_hddoor_right_masks_0_fg_2_de2159",
+        "bn_vp_hddoor_right_masks_0_fg_3_7dcbc8"
+      ]
+    }
+  ]
+}

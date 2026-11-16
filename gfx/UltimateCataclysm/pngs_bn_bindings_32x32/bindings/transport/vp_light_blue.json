@@ -1,0 +1,19 @@
+{
+  "id": "vp_light_blue",
+  "fg": [
+    "bn_vp_light_blue_fg_0",
+    "bn_vp_light_blue_fg_1"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center_32x48",
+      "bg": [
+        "bn_vp_light_blue_fg_0",
+        "bn_vp_light_blue_fg_1"
+      ]
+    }
+  ],
+  "vehicle_underlay": true
+}

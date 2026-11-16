@@ -1,0 +1,29 @@
+{
+  "id": "vp_seat_leather",
+  "fg": [
+    "vp_seat_leather_up",
+    "vp_seat_leather_left",
+    "vp_seat_leather_down",
+    "vp_seat_leather_right"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_seat_leather_up",
+        "vp_seat_leather_left",
+        "vp_seat_leather_down",
+        "vp_seat_leather_right"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "seat",
+    "tiles": {
+      "windshield": "vp_seat_windshield_leather",
+      "inset_windshield": "vp_seat_windshield_leather"
+    }
+  }
+}

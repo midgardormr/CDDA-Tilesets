@@ -1,0 +1,88 @@
+{
+  "id": "vp_hddoor",
+  "fg": [
+    "vp_hddoor_L_rotN",
+    "vp_hddoor_L_rotW",
+    "vp_hddoor_L_rotS",
+    "vp_hddoor_L_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "vp_hddoor_left_open_rotN",
+        "vp_hddoor_left_open_rotW",
+        "vp_hddoor_left_open_rotS",
+        "vp_hddoor_left_open_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": [
+            "bn_vp_hddoor_masks_0_fg_0",
+            "bn_vp_hddoor_masks_0_fg_1",
+            "bn_vp_hddoor_masks_0_fg_2",
+            "bn_vp_hddoor_masks_0_fg_3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_hddoor_left_open_rotN",
+        "vp_hddoor_left_open_rotW",
+        "vp_hddoor_left_open_rotS",
+        "vp_hddoor_left_open_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": [
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0"
+          ],
+          "bg": [
+            "bn_vp_hddoor_masks_0_fg_0",
+            "bn_vp_hddoor_masks_0_fg_1",
+            "bn_vp_hddoor_masks_0_fg_2",
+            "bn_vp_hddoor_masks_0_fg_3"
+          ]
+        }
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "door",
+    "tiles": {
+      "left": "vp_hddoor_left",
+      "right": "vp_hddoor_right",
+      "front_left": "vp_hddoor_left",
+      "front_right": "vp_hddoor_right",
+      "rear_left": "vp_hddoor_left",
+      "rear_right": "vp_hddoor_right",
+      "box_left": "vp_hddoor_left",
+      "box_right": "vp_hddoor_right"
+    }
+  },
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_hddoor_masks_0_fg_0_facd4e",
+        "bn_vp_hddoor_masks_0_fg_1_9dc201",
+        "bn_vp_hddoor_masks_0_fg_2_9a73ce",
+        "bn_vp_hddoor_masks_0_fg_3_974492"
+      ]
+    }
+  ]
+}

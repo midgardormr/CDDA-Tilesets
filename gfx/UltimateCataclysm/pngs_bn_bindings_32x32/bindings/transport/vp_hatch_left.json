@@ -1,0 +1,36 @@
+{
+  "id": "vp_hatch_left",
+  "fg": [
+    "vp_hatch_left",
+    "vp_hatch_left_rotW",
+    "vp_hatch_left_rotS",
+    "vp_hatch_left_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "vp_hatch_left_open",
+        "vp_hatch_left_open_rotW",
+        "vp_hatch_left_open_rotS",
+        "vp_hatch_left_open_rotE"
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_hatch_left_open",
+        "vp_hatch_left_open_rotW",
+        "vp_hatch_left_open_rotS",
+        "vp_hatch_left_open_rotE"
+      ]
+    }
+  ]
+}

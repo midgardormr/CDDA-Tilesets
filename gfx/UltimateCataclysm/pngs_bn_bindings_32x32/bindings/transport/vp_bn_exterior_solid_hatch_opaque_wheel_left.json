@@ -1,0 +1,69 @@
+{
+  "id": "vp_bn_exterior_solid_hatch_opaque_wheel_left",
+  "fg": [
+    "vp_hatch_left",
+    "bn_vp_bn_exterior_solid_hatch_opaque_wheel_left_fg_1",
+    "vp_hatch_left_rotS",
+    "vp_hatch_opaque_left_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "vp_hatch_opaque_left_open",
+        "bn_vp_bn_exterior_solid_hatch_opaque_wheel_left_additional_tiles_0_fg_1",
+        "vp_hatch_opaque_left_open_rotS",
+        "vp_hatch_opaque_left_open_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": [
+            "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2",
+            "bn_vp_bn_exterior_solid_hatch_opaque_wheel_left_masks_0_fg_1",
+            "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2",
+            "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_hatch_opaque_left_open",
+        "bn_vp_bn_exterior_solid_hatch_opaque_wheel_left_additional_tiles_0_fg_1",
+        "vp_hatch_opaque_left_open_rotS",
+        "vp_hatch_opaque_left_open_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "bg": [
+            "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2",
+            "bn_vp_bn_exterior_solid_hatch_opaque_wheel_left_masks_0_fg_1",
+            "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2",
+            "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2",
+        "bn_vp_bn_exterior_solid_hatch_opaque_wheel_left_masks_0_fg_1",
+        "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2",
+        "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2"
+      ]
+    }
+  ]
+}

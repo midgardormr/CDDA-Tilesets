@@ -1,0 +1,103 @@
+{
+  "id": "vp_windshield",
+  "fg": [
+    "vp_windshield_horizontal",
+    "vp_windshield_horizontal_rotW",
+    "vp_windshield_horizontal_rotS",
+    "vp_windshield_cover_left_rotE"
+  ],
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_glass_center_32x48",
+        "crack_glass_center_32x48",
+        "crack_glass_center_32x48",
+        "crack_glass_center_32x48"
+      ],
+      "bg": [
+        "vp_windshield_horizontal",
+        "vp_windshield_horizontal_rotW",
+        "vp_windshield_horizontal_rotS",
+        "vp_windshield_cover_left_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": [
+            "bn_vp_windshield_masks_0_fg_0",
+            "bn_vp_windshield_masks_0_fg_0",
+            "bn_vp_windshield_masks_0_fg_0",
+            "bn_vp_windshield_masks_0_fg_0"
+          ],
+          "bg": [
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0"
+          ]
+        }
+      ]
+    }
+  ],
+  "multitile": true,
+  "vehicle_variants": {
+    "shape": "windshield",
+    "tiles": {
+      "left": "vp_windshield_nw",
+      "right": "vp_windshield_ne",
+      "cover_left": "vp_windshield_cover_left",
+      "cover_right": "vp_windshield_cover_right",
+      "center": "vp_windshield_horizontal_front",
+      "side_left": "vp_windshield_vertical_left",
+      "side_right": "vp_windshield_vertical_right",
+      "rear_center": "vp_windshield_horizontal_rear",
+      "narrow_front_center": "vp_windshield_horizontal_front",
+      "narrow_rear_center": "vp_windshield_horizontal_rear",
+      "side_wheel_left": "vp_windshield_full_wheel_left",
+      "side_wheel_right": "vp_windshield_full_wheel_right",
+      "inset_front_left": "vp_windshield_nw",
+      "inset_front_right": "vp_windshield_ne",
+      "inset_front_center": "vp_windshield_cover_left",
+      "inset_rear_left": "vp_windshield_vertical_left",
+      "inset_rear_right": "vp_windshield_vertical_right",
+      "inset_partition": "vp_windshield_horizontal_rear",
+      "wheel_left": "vp_windshield_wheel_left",
+      "wheel_right": "vp_windshield_wheel_right",
+      "control_bay_center": "vp_windshield_horizontal_front",
+      "control_bay_front_left": "vp_windshield_nw",
+      "control_bay_front_right": "vp_windshield_ne",
+      "control_bay_rear_left": "vp_windshield_sw",
+      "control_bay_rear_right": "vp_windshield_se",
+      "control_bay_side_left": "vp_windshield_vertical_left",
+      "control_bay_side_right": "vp_windshield_vertical_right",
+      "high_left": "vp_windshield_full_vertical_left",
+      "high_right": "vp_windshield_full_vertical_right",
+      "high_wheel_left": "vp_windshield_full_wheel_left",
+      "high_wheel_right": "vp_windshield_full_wheel_right",
+      "rear_left": "vp_windshield_sw_edge",
+      "rear_right": "vp_windshield_se_edge",
+      "rear_band": "vp_windshield_horizontal_rear_edge",
+      "low_front_left": "vp_windshield_nw_edge",
+      "low_front_right": "vp_windshield_ne_edge",
+      "low_front_wheel_left": "vp_windshield_wheel_left",
+      "low_front_wheel_right": "vp_windshield_wheel_right",
+      "mixed_front_center": "vp_windshield_horizontal_front",
+      "box_front_left": "vp_windshield_nw_edge",
+      "box_front_right": "vp_windshield_ne_edge",
+      "unwheeled_front_left": "vp_windshield_nw_edge",
+      "unwheeled_front_right": "vp_windshield_ne_edge"
+    }
+  },
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0"
+      ]
+    }
+  ]
+}

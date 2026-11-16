@@ -1,0 +1,40 @@
+name: Bright Nights UltiCa builds
+
+on:
+  push:
+    branches: [ultica-bn]
+    paths:
+      - 'gfx/UltimateCataclysm/**'
+      - 'gfx/Chibi_Ultica/**'
+      - 'gfx/MShockXotto+/**'
+      - 'tools/compose.py'
+      - 'tools/tests/**'
+      - '.github/workflows/ultica_bn_ci_build.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tileset: [UltimateCataclysm, Chibi_Ultica]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y libvips42
+      - run: python -m pip install pyvips tqdm
+      - run: python -m unittest discover -s tools/tests
+      - name: Compose from this branch's sources
+        env:
+          TILESET: ${{ matrix.tileset }}
+        run: |
+          python tools/compose.py --use-all --feedback CONCISE "gfx/$TILESET" "build/$TILESET"
+          cp "gfx/$TILESET/tileset.txt" "build/$TILESET/"
+          cp "gfx/$TILESET/fallback.png" "build/$TILESET/"
+          cp "gfx/$TILESET/layering.json" "build/$TILESET/"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.tileset }}-BN
+          path: build/${{ matrix.tileset }}/

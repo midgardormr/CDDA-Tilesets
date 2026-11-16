@@ -1,0 +1,36 @@
+{
+  "id": "vp_bn_exterior_solid_hatch_opaque_front",
+  "fg": [
+    "bn_vp_bn_exterior_solid_hatch_opaque_front_fg_0",
+    "bn_vp_bn_exterior_solid_hatch_opaque_front_fg_1",
+    "vp_hatch_opaque_rotS",
+    "bn_vp_bn_exterior_solid_hatch_opaque_front_fg_3"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "bn_vp_bn_exterior_solid_hatch_opaque_front_additional_tiles_0_fg_0",
+        "bn_vp_bn_exterior_solid_hatch_opaque_front_additional_tiles_0_fg_1",
+        "vp_hatch_opaque_open_rotS",
+        "bn_vp_bn_exterior_solid_hatch_opaque_front_additional_tiles_0_fg_3"
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_large",
+        "crack_metal_center_large",
+        "crack_metal_center_large",
+        "crack_metal_center_large"
+      ],
+      "bg": [
+        "bn_vp_bn_exterior_solid_hatch_opaque_front_additional_tiles_0_fg_0",
+        "bn_vp_bn_exterior_solid_hatch_opaque_front_additional_tiles_0_fg_1",
+        "vp_hatch_opaque_open_rotS",
+        "bn_vp_bn_exterior_solid_hatch_opaque_front_additional_tiles_0_fg_3"
+      ]
+    }
+  ]
+}

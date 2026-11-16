@@ -1,0 +1,31 @@
+{
+  "id": "vp_stowboard_horizontal",
+  "fg": [
+    "vp_stowboard_horizontal_front",
+    "vp_stowboard_horizontal_rotW",
+    "vp_stowboard_horizontal_front",
+    "vp_stowboard_vertical_rotNS"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_stowboard_horizontal_front",
+        "vp_stowboard_horizontal_rotW",
+        "vp_stowboard_horizontal_front",
+        "vp_stowboard_vertical_rotNS"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "panel",
+    "tiles": {
+      "front": "vp_stowboard_horizontal_front",
+      "rear": "vp_stowboard_horizontal_rear",
+      "exterior": "vp_board_horizontal",
+      "partition": "vp_stowboard_horizontal"
+    }
+  }
+}

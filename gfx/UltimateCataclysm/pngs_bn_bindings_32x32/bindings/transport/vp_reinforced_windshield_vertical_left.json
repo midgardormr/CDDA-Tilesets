@@ -1,0 +1,56 @@
+{
+  "id": "vp_reinforced_windshield_vertical_left",
+  "fg": [
+    "vp_windshield_reinforced_vertical_left",
+    "vp_windshield_reinforced_vertical_left_rotW",
+    "vp_windshield_reinforced_vertical_right",
+    "vp_windshield_reinforced_vertical_left_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_glass_center",
+      "bg": [
+        "vp_windshield_reinforced_vertical_left",
+        "vp_windshield_reinforced_vertical_left_rotW",
+        "vp_windshield_reinforced_vertical_right",
+        "vp_windshield_reinforced_vertical_left_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": "bn_vp_reinforced_windshield_0_masks_0_fg",
+          "bg": [
+            "bn_vp_reinforced_windshield_full_left_masks_0_bg_0",
+            "bn_vp_reinforced_windshield_full_left_masks_0_bg_1",
+            "bn_vp_reinforced_windshield_full_left_masks_0_bg_2",
+            "bn_vp_reinforced_windshield_full_left_masks_0_bg_3"
+          ]
+        }
+      ]
+    }
+  ],
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_reinforced_windshield_full_left_masks_0_bg_0",
+        "bn_vp_reinforced_windshield_full_left_masks_0_bg_1",
+        "bn_vp_reinforced_windshield_full_left_masks_0_bg_2",
+        "bn_vp_reinforced_windshield_full_left_masks_0_bg_3"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "windshield",
+    "tiles": {
+      "high_left": "vp_reinforced_windshield_full_vertical_left",
+      "high_right": "vp_reinforced_windshield_full_vertical_right",
+      "rear_left": "vp_reinforced_windshield_sw_edge",
+      "rear_right": "vp_reinforced_windshield_se_edge",
+      "rear_band": "vp_reinforced_windshield_horizontal_rear_edge",
+      "mixed_front_center": "vp_reinforced_windshield_horizontal_front"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "vp_clothboard_sw",
+  "fg": [
+    "vp_clothboard_sw",
+    "vp_clothboard_sw_rotW",
+    "vp_clothboard_ne",
+    "vp_clothboard_sw_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_clothboard_sw",
+        "vp_clothboard_sw_rotW",
+        "vp_clothboard_ne",
+        "vp_clothboard_sw_rotE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "vp_xlhalfboard_ne",
+  "fg": [
+    "vp_xlhalfboard_ne",
+    "vp_xlhalfboard_ne_rotW",
+    "vp_xlhalfboard_ne_rotS",
+    "vp_xlhalfboard_ne_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_xlhalfboard_ne",
+        "vp_xlhalfboard_ne_rotW",
+        "vp_xlhalfboard_ne_rotS",
+        "vp_xlhalfboard_ne_rotE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "vp_board_horizontal",
+  "fg": [
+    "vp_board_horizontal_front",
+    "vp_board_horizontal_rotW",
+    "vp_board_horizontal_front",
+    "vp_board_vertical_rotNS"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_board_horizontal_front",
+        "vp_board_horizontal_rotW",
+        "vp_board_horizontal_front",
+        "vp_board_vertical_rotNS"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "panel",
+    "tiles": {
+      "front": "vp_board_horizontal_front",
+      "rear": "vp_board_horizontal_rear",
+      "exterior": "vp_bn_roof_surface",
+      "partition": "vp_board_horizontal",
+      "opaque_exterior": "vp_bn_exterior_solid_board_horizontal"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "vp_frame_wood_deck",
+  "fg": "frame_wood_cover",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "frame_wood_cover"
+    }
+  ]
+}

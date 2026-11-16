@@ -1,0 +1,55 @@
+{
+  "id": "vp_halfboard_hatch_wheel_left",
+  "fg": [
+    "vp_halfboard_hatch_wheel_left",
+    "vp_halfboard_hatch_wheel_left_rotW",
+    "vp_halfboard_hatch_wheel_left_rotS",
+    "vp_halfboard_hatch_wheel_left_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_large",
+        "crack_metal_center_large",
+        "crack_metal_center_large",
+        "crack_metal_center_large"
+      ],
+      "bg": [
+        "vp_halfboard_hatch_wheel_left",
+        "vp_halfboard_hatch_wheel_left_rotW",
+        "vp_halfboard_hatch_wheel_left_rotS",
+        "vp_halfboard_hatch_wheel_left_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "bg": [
+            "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_1",
+            "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2",
+            "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_1",
+        "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2",
+        "bn_vp_bn_exterior_solid_halfboard_hatch_wheel_left_masks_0_bg_2"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "panel",
+    "tiles": {
+      "opaque_exterior": "vp_bn_exterior_solid_halfboard_hatch_wheel_left"
+    }
+  }
+}

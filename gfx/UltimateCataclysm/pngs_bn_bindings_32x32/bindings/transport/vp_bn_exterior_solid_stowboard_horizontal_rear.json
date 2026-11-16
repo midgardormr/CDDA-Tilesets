@@ -1,0 +1,22 @@
+{
+  "id": "vp_bn_exterior_solid_stowboard_horizontal_rear",
+  "fg": [
+    "bn_vp_bn_exterior_solid_stowboard_horizontal_rear_fg_0",
+    "vp_stowboard_horizontal_front_rotE",
+    "vp_stowboard_horizontal_front",
+    "vp_stowboard_horizontal_front_rotW"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "bn_vp_bn_exterior_solid_stowboard_horizontal_rear_fg_0",
+        "vp_stowboard_horizontal_front_rotE",
+        "vp_stowboard_horizontal_front",
+        "vp_stowboard_horizontal_front_rotW"
+      ]
+    }
+  ]
+}

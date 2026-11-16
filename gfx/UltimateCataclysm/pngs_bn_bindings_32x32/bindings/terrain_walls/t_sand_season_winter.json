@@ -1,0 +1,65 @@
+{
+  "id": "t_sand_season_winter",
+  "multitile": true,
+  "fg": "t_sand_unconnected",
+  "bg": "snow_shallow_center",
+  "additional_tiles": [
+    {
+      "id": "center",
+      "bg": "snow_shallow_center",
+      "fg": [
+        {
+          "weight": 1,
+          "sprite": "t_sand_center"
+        },
+        {
+          "weight": 1,
+          "sprite": "t_sand_center2"
+        }
+      ]
+    },
+    {
+      "id": "corner",
+      "bg": "snow_shallow_center",
+      "fg": [
+        "t_sand_corner_nw",
+        "t_sand_corner_sw",
+        "t_sand_corner_se",
+        "t_sand_corner_ne"
+      ]
+    },
+    {
+      "id": "t_connection",
+      "bg": "snow_shallow_center",
+      "fg": [
+        "t_sand_t_connection_n",
+        "t_sand_t_connection_w",
+        "t_sand_t_connection_s",
+        "t_sand_t_connection_e"
+      ]
+    },
+    {
+      "id": "edge",
+      "bg": "snow_shallow_center",
+      "fg": [
+        "t_sand_edge_ns",
+        "t_sand_edge_ew"
+      ]
+    },
+    {
+      "id": "end_piece",
+      "bg": "snow_shallow_center",
+      "fg": [
+        "t_sand_end_piece_n",
+        "t_sand_end_piece_w",
+        "t_sand_end_piece_s",
+        "t_sand_end_piece_e"
+      ]
+    },
+    {
+      "bg": "snow_shallow_center",
+      "id": "unconnected",
+      "fg": "t_sand_unconnected"
+    }
+  ]
+}

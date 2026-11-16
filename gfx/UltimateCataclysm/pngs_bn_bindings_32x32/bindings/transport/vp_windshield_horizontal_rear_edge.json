@@ -1,0 +1,55 @@
+{
+  "id": "vp_windshield_horizontal_rear_edge",
+  "fg": [
+    "vp_windshield_rear_edge",
+    "vp_windshield_rear_edge_rotW",
+    "vp_windshield_rear_edge_rotS",
+    "vp_windshield_rear_edge_rotE"
+  ],
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_glass_center_32x48",
+        "crack_glass_center_32x48",
+        "crack_glass_center_32x48",
+        "crack_glass_center_32x48"
+      ],
+      "bg": [
+        "vp_windshield_rear_edge",
+        "vp_windshield_rear_edge_rotW",
+        "vp_windshield_rear_edge_rotS",
+        "vp_windshield_rear_edge_rotE"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": [
+            "bn_vp_windshield_masks_0_fg_0",
+            "bn_vp_windshield_masks_0_fg_0",
+            "bn_vp_windshield_masks_0_fg_0",
+            "bn_vp_windshield_masks_0_fg_0"
+          ],
+          "bg": [
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0"
+          ]
+        }
+      ]
+    }
+  ],
+  "multitile": true,
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0"
+      ]
+    }
+  ]
+}

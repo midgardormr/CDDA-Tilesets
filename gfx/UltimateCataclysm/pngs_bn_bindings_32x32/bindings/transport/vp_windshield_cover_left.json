@@ -1,0 +1,27 @@
+{
+  "id": "vp_windshield_cover_left",
+  "fg": [
+    "vp_windshield_cover_left",
+    "vp_windshield_cover_left_rotW",
+    "vp_windshield_cover_left_rotS",
+    "vp_windshield_cover_left_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_windshield_cover_left",
+        "vp_windshield_cover_left_rotW",
+        "vp_windshield_cover_left_rotS",
+        "vp_windshield_cover_left_rotE"
+      ]
+    }
+  ]
+}

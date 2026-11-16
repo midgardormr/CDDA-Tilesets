@@ -1,0 +1,22 @@
+{
+  "id": "vp_seat_back_leather_front",
+  "fg": [
+    "vp_seat_back_leather",
+    "vp_seat_back_leather_rotW",
+    "vp_seat_back_leather_rotS",
+    "vp_seat_back_leather_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_seat_back_leather",
+        "vp_seat_back_leather_rotW",
+        "vp_seat_back_leather_rotS",
+        "vp_seat_back_leather_rotE"
+      ]
+    }
+  ]
+}

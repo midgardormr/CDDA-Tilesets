@@ -1,0 +1,22 @@
+{
+  "id": "vp_seat_back_left",
+  "fg": [
+    "vp_seat_back_left",
+    "vp_seat_back_left_rotW",
+    "vp_seat_back_left_rotS",
+    "vp_seat_back_left_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_seat_back_left",
+        "vp_seat_back_left_rotW",
+        "vp_seat_back_left_rotS",
+        "vp_seat_back_left_rotE"
+      ]
+    }
+  ]
+}

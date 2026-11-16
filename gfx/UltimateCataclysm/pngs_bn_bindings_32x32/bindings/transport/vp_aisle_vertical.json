@@ -1,0 +1,19 @@
+{
+  "id": "vp_aisle_vertical",
+  "fg": "vp_aisle_vertical",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "vp_aisle_vertical"
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "aisle",
+    "tiles": {
+      "vertical": "vp_aisle_vertical",
+      "horizontal": "vp_aisle_horizontal"
+    }
+  }
+}

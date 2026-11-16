@@ -1,0 +1,21 @@
+{
+  "id": "vp_hdhalfboard_vertical",
+  "fg": "vp_hdhalfboard_vertical",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "vp_hdhalfboard_vertical"
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "side",
+    "tiles": {
+      "left": "vp_hdhalfboard_vertical_left",
+      "right": "vp_hdhalfboard_vertical_right",
+      "hull_left": "vp_hdhalfboard_vertical_left",
+      "hull_right": "vp_hdhalfboard_vertical_right"
+    }
+  }
+}

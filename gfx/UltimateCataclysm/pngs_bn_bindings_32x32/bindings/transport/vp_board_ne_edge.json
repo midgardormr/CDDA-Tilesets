@@ -1,0 +1,33 @@
+{
+  "id": "vp_board_ne_edge",
+  "fg": [
+    "vp_board_ne",
+    "vp_board_ne_edge_rotW",
+    "vp_board_ne_rotS",
+    "vp_board_ne_edge_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_board_ne",
+        "vp_board_ne_edge_rotW",
+        "vp_board_ne_rotS",
+        "vp_board_ne_edge_rotE"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "panel",
+    "tiles": {
+      "opaque_exterior": "vp_bn_exterior_solid_board_ne_edge"
+    }
+  }
+}

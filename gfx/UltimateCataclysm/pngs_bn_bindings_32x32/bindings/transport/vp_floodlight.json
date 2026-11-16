@@ -1,0 +1,32 @@
+{
+  "id": "vp_floodlight",
+  "fg": [
+    "bn_vp_directed_floodlight_fg_0",
+    "bn_vp_directed_floodlight_fg_1",
+    "bn_vp_directed_floodlight_fg_2",
+    "bn_vp_directed_floodlight_fg_3"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center_32x48",
+      "bg": [
+        "bn_vp_directed_floodlight_fg_0",
+        "bn_vp_directed_floodlight_fg_1",
+        "bn_vp_directed_floodlight_fg_2",
+        "bn_vp_directed_floodlight_fg_3"
+      ]
+    }
+  ],
+  "vehicle_underlay": true,
+  "vehicle_variants": {
+    "shape": "side",
+    "tiles": {
+      "left": "vp_floodlight_bn_left",
+      "right": "vp_floodlight_bn_right",
+      "wheel_left": "vp_floodlight_bn_left",
+      "wheel_right": "vp_floodlight_bn_right"
+    }
+  }
+}

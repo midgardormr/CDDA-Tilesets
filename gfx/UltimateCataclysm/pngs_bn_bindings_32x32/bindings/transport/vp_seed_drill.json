@@ -1,0 +1,22 @@
+{
+  "id": "vp_seed_drill",
+  "fg": [
+    "vp_seed_drill_N",
+    "vp_seed_drill_W",
+    "vp_seed_drill_S",
+    "vp_seed_drill_E"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_seed_drill_N",
+        "vp_seed_drill_W",
+        "vp_seed_drill_S",
+        "vp_seed_drill_E"
+      ]
+    }
+  ]
+}

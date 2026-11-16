@@ -1,0 +1,45 @@
+{
+  "id": "vp_windshield_full_vertical_left",
+  "fg": [
+    "vp_windshield_full_faceW",
+    "vp_windshield_full_left_rotW_right_rotE",
+    "vp_windshield_full_faceE",
+    "vp_windshield_full_faceN"
+  ],
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_glass_right",
+      "bg": [
+        "vp_windshield_full_faceW",
+        "vp_windshield_full_left_rotW_right_rotE",
+        "vp_windshield_full_faceE",
+        "vp_windshield_full_faceN"
+      ],
+      "masks": [
+        {
+          "type": "tint",
+          "fg": "bn_vp_windshield_full_0_masks_0_fg",
+          "bg": [
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+            "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0"
+          ]
+        }
+      ]
+    }
+  ],
+  "multitile": true,
+  "masks": [
+    {
+      "type": "tint",
+      "fg": [
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0",
+        "bn_vp_bn_exterior_solid_board_wheel_left_masks_0_bg_0"
+      ]
+    }
+  ]
+}

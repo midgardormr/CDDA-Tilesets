@@ -1,0 +1,27 @@
+{
+  "id": "vp_reclining_seat_windshield",
+  "fg": [
+    "vp_seat_windshield_rotN",
+    "vp_seat_windshield_rotW",
+    "vp_seat_windshield_rotS",
+    "vp_seat_windshield_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_seat_windshield_rotN",
+        "vp_seat_windshield_rotW",
+        "vp_seat_windshield_rotS",
+        "vp_seat_windshield_rotE"
+      ]
+    }
+  ]
+}

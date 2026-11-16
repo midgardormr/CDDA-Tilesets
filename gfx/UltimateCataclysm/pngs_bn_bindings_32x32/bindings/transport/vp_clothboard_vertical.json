@@ -1,0 +1,38 @@
+{
+  "id": "vp_clothboard_vertical",
+  "fg": [
+    "vp_clothboard_vertical_rotNS",
+    "vp_clothboard_horizontal_rear_rotS",
+    "vp_clothboard_vertical_rotNS",
+    "vp_clothboard_horizontal_rear_rotS"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48",
+        "crack_metal_center_32x48"
+      ],
+      "bg": [
+        "vp_clothboard_vertical_rotNS",
+        "vp_clothboard_horizontal_rear_rotS",
+        "vp_clothboard_vertical_rotNS",
+        "vp_clothboard_horizontal_rear_rotS"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "side",
+    "tiles": {
+      "wheel_left": "vp_clothboard_wheel_left",
+      "wheel_right": "vp_clothboard_wheel_right",
+      "left": "vp_clothboard_vertical_left",
+      "right": "vp_clothboard_vertical_right",
+      "hull_left": "vp_clothboard_vertical_left",
+      "hull_right": "vp_clothboard_vertical_right"
+    }
+  }
+}

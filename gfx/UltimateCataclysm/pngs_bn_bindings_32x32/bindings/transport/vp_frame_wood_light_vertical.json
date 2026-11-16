@@ -1,0 +1,12 @@
+{
+  "id": "vp_frame_wood_light_vertical",
+  "fg": "frame_wood_vertical",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "frame_wood_vertical"
+    }
+  ]
+}

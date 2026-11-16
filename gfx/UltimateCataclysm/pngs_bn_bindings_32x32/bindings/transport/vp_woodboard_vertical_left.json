@@ -1,0 +1,22 @@
+{
+  "id": "vp_woodboard_vertical_left",
+  "fg": [
+    "vp_woodboard_vertical_left_rotN_right_rotS",
+    "vp_woodboard_horizontal_rear_rotN_front_rotS",
+    "vp_woodboard_vertical_right_rotN_left_rotS",
+    "vp_woodboard_horizontal_front_rotN_rear_rotS"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_woodboard_vertical_left_rotN_right_rotS",
+        "vp_woodboard_horizontal_rear_rotN_front_rotS",
+        "vp_woodboard_vertical_right_rotN_left_rotS",
+        "vp_woodboard_horizontal_front_rotN_rear_rotS"
+      ]
+    }
+  ]
+}

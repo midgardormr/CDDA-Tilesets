@@ -1,0 +1,25 @@
+{
+  "id": "vp_frame_vertical",
+  "fg": "frame_vertical",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "frame_vertical"
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "frame",
+    "tiles": {
+      "left": "vp_frame_vertical_left",
+      "right": "vp_frame_vertical_right",
+      "seat_left": "vp_frame_vertical_2_left",
+      "seat_right": "vp_frame_vertical_2_right",
+      "join_left": "vp_frame_vertical_T_left",
+      "join_right": "vp_frame_vertical_T_right",
+      "double_left": "vp_frame_vertical_2_left",
+      "double_right": "vp_frame_vertical_2_right"
+    }
+  }
+}

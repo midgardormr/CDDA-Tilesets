@@ -1,0 +1,13 @@
+{
+  "id": "vp_ups_rifle_t",
+  "fg": "vp_laser_rifle",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "vp_laser_rifle"
+    }
+  ],
+  "vehicle_underlay": true
+}

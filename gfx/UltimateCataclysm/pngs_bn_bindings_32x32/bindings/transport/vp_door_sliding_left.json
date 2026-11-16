@@ -1,0 +1,36 @@
+{
+  "id": "vp_door_sliding_left",
+  "fg": [
+    "vp_door_sliding_left",
+    "vp_door_full_left",
+    "vp_door_opaque_rear",
+    "vp_door_full_left_rotS"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "vp_door_sliding_left_open",
+        "vp_door_sliding_open_faceW",
+        "vp_door_sliding_rear_left_open",
+        "vp_door_sliding_open_faceE"
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": [
+        "crack_metal_center_tall",
+        "crack_metal_center_tall",
+        "crack_metal_center_tall",
+        "crack_metal_center_tall"
+      ],
+      "bg": [
+        "vp_door_sliding_left_open",
+        "vp_door_sliding_open_faceW",
+        "vp_door_sliding_rear_left_open",
+        "vp_door_sliding_open_faceE"
+      ]
+    }
+  ]
+}

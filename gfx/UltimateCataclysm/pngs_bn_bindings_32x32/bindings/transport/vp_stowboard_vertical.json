@@ -1,0 +1,36 @@
+{
+  "id": "vp_stowboard_vertical",
+  "fg": [
+    "vp_stowboard_vertical_rotNS",
+    "vp_stowboard_horizontal_front",
+    "vp_stowboard_vertical_rotNS",
+    "vp_stowboard_horizontal_front"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_stowboard_vertical_rotNS",
+        "vp_stowboard_horizontal_front",
+        "vp_stowboard_vertical_rotNS",
+        "vp_stowboard_horizontal_front"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "side",
+    "tiles": {
+      "left": "vp_stowboard_vertical_left",
+      "right": "vp_stowboard_vertical_right",
+      "wheel_left": "vp_stowboard_wheel_left",
+      "wheel_right": "vp_stowboard_wheel_right",
+      "exterior": "vp_board_vertical",
+      "hull_left": "vp_stowboard_vertical_left",
+      "hull_right": "vp_stowboard_vertical_right",
+      "box_front_solid_left": "vp_stowboard_nw",
+      "box_front_solid_right": "vp_stowboard_ne"
+    }
+  }
+}

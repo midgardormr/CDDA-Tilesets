@@ -1,0 +1,12 @@
+{
+  "id": "vp_trunk_flat",
+  "fg": "vp_trunk",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "vp_trunk"
+    }
+  ]
+}

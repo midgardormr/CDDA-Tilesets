@@ -1,0 +1,13 @@
+{
+  "id": "vp_mounted_coilgun",
+  "fg": "vp_mounted_hk_g80",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "vp_mounted_hk_g80"
+    }
+  ],
+  "vehicle_underlay": true
+}

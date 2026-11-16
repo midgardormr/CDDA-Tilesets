@@ -1,0 +1,8 @@
+{
+  "id": "lab_surface_parking_blockE0",
+  "fg": [
+    "carpark_ns",
+    "carpark_ew"
+  ],
+  "rotates": true
+}

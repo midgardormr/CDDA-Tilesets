@@ -1,0 +1,20 @@
+{
+  "id": "vp_hdframe_horizontal_2",
+  "fg": "hdframe_horizontal2",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "hdframe_horizontal2"
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "front_frame",
+    "tiles": {
+      "left": "vp_hdframe_nw",
+      "right": "vp_hdframe_ne",
+      "center": "vp_hdframe_horizontal_front"
+    }
+  }
+}

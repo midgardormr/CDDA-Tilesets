@@ -1,0 +1,22 @@
+{
+  "id": "vp_hdstowboard_horizontal_front",
+  "fg": [
+    "vp_hdstowboard_horizontal_front",
+    "vp_hdstowboard_horizontal_front_rotW",
+    "vp_hdstowboard_horizontal_front_rotS",
+    "vp_hdstowboard_horizontal_front_rotE"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": [
+        "vp_hdstowboard_horizontal_front",
+        "vp_hdstowboard_horizontal_front_rotW",
+        "vp_hdstowboard_horizontal_front_rotS",
+        "vp_hdstowboard_horizontal_front_rotE"
+      ]
+    }
+  ]
+}

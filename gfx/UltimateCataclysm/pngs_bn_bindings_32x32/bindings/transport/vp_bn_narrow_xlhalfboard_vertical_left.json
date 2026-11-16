@@ -1,0 +1,13 @@
+{
+  "id": "vp_bn_narrow_xlhalfboard_vertical_left",
+  "fg": "vp_xlhalfboard_vertical_left",
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "broken",
+      "fg": "crack_metal_center",
+      "bg": "vp_xlhalfboard_vertical_left"
+    }
+  ],
+  "default_tint": "#622625"
+}

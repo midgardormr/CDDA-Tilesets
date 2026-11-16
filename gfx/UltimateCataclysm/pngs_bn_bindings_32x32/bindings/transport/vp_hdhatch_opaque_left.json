@@ -1,0 +1,37 @@
+{
+  "id": "vp_hdhatch_opaque_left",
+  "fg": [
+    "bn_vp_bn_exterior_solid_hdhatch_opaque_left_fg_0",
+    "bn_vp_bn_exterior_solid_hdhatch_opaque_left_fg_1",
+    "bn_vp_bn_exterior_solid_hdhatch_opaque_left_fg_2",
+    "bn_vp_bn_exterior_solid_hdhatch_opaque_left_fg_3"
+  ],
+  "multitile": true,
+  "additional_tiles": [
+    {
+      "id": "open",
+      "fg": [
+        "bn_vp_bn_exterior_solid_hdhatch_opaque_left_additional_tiles_0_fg_0",
+        "bn_vp_hdhatch_opaque_left_additional_tiles_0_fg_1",
+        "bn_vp_bn_exterior_solid_hdhatch_opaque_left_additional_tiles_0_fg_2",
+        "bn_vp_bn_exterior_solid_hdhatch_opaque_left_additional_tiles_0_fg_3"
+      ]
+    },
+    {
+      "id": "broken",
+      "fg": "bn_vp_bn_exterior_solid_hdhatch_opaque_left_additional_tiles_1_fg",
+      "bg": [
+        "bn_vp_bn_exterior_solid_hdhatch_opaque_left_additional_tiles_0_fg_0",
+        "bn_vp_hdhatch_opaque_left_additional_tiles_0_fg_1",
+        "bn_vp_bn_exterior_solid_hdhatch_opaque_left_additional_tiles_0_fg_2",
+        "bn_vp_bn_exterior_solid_hdhatch_opaque_left_additional_tiles_0_fg_3"
+      ]
+    }
+  ],
+  "vehicle_variants": {
+    "shape": "panel",
+    "tiles": {
+      "opaque_exterior": "vp_bn_exterior_solid_hdhatch_opaque_left"
+    }
+  }
+}
