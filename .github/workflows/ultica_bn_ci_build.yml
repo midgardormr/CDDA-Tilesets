@@ -38,3 +38,41 @@ jobs:
         with:
           name: ${{ matrix.tileset }}-BN
           path: build/${{ matrix.tileset }}/
+
+  release:
+    needs: build
+    if: github.ref == 'refs/heads/ultica-bn'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: UltimateCataclysm-BN
+          path: release/UltimateCataclysm
+      - uses: actions/download-artifact@v4
+        with:
+          name: Chibi_Ultica-BN
+          path: release/ChibiUltica
+      - name: Publish versioned BN tilesets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        working-directory: release
+        run: |
+          set -euo pipefail
+          tag="ultica-bn-${GITHUB_SHA:0:12}"
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release $tag already exists; leaving its files unchanged."
+            exit 0
+          fi
+          for tileset in UltimateCataclysm ChibiUltica; do
+            printf 'Source: https://github.com/%s\nCommit: %s\n' \
+              "$GITHUB_REPOSITORY" "$GITHUB_SHA" >"$tileset/SOURCE.txt"
+            zip -qr "$tileset.zip" "$tileset"
+          done
+          sha256sum UltimateCataclysm.zip ChibiUltica.zip >SHA256SUMS
+          gh release create "$tag" UltimateCataclysm.zip ChibiUltica.zip SHA256SUMS \
+            --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "UltiCa for Bright Nights (${GITHUB_SHA:0:12})" \
+            --notes "Built from $GITHUB_SHA. Original artwork credits and licenses are retained in the source repository and tileset metadata." \
+            --prerelease --latest=false

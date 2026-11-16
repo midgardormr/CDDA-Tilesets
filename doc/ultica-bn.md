@@ -10,7 +10,11 @@ python tools/compose.py --use-all gfx/Chibi_Ultica build/Chibi_Ultica
 
 Copy `tileset.txt`, `fallback.png`, and `layering.json` from the respective source
 pack alongside the generated files. The branch's **Bright Nights UltiCa builds**
-workflow performs these steps and publishes both packs as artifacts.
+workflow performs these steps and publishes both packs as artifacts. It also
+publishes versioned prereleases named `ultica-bn-<commit-prefix>` containing
+`UltimateCataclysm.zip`, `ChibiUltica.zip`, and `SHA256SUMS`. These archives retain
+the directory names expected by the BN packaging workflow. Existing release
+assets are not replaced when a workflow is rerun.
 
 BN entries are in each pack's `pngs_bn_bindings_32x32/bindings` directory. They use
 sprite names rather than compiled atlas indices. Identical Chibi binding files use
