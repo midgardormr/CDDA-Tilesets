@@ -36,6 +36,8 @@ graphics require the matching renderer support in Bright Nights.
 It updates `master` from upstream, prepares a merge into `ultica-bn`, and runs
 the existing tests and builds for both packs. Only the checked merge is promoted.
 Conflicts and failed checks leave a PR open with a link to the logs.
+If GitHub rejects a push, for example when upstream changes workflow files,
+the update is left for manual review in a PR.
 
 The workflow can also be run manually from Actions. After a successful update,
 the normal release build runs to publish new archives.

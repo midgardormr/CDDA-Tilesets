@@ -55,6 +55,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           SYNC_UPSTREAM: https://github.com/I-am-Erk/CDDA-Tilesets.git
+          SYNC_UPSTREAM_HEAD: I-am-Erk:master
           SYNC_RUN_ID: ${{ github.run_id }}-${{ github.run_attempt }}
           SYNC_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python tools/sync_bn_upstream.py prepare --output "$RUNNER_TEMP/sync-plan.json"

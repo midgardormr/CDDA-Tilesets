@@ -23,9 +23,14 @@ def update_pr(repo, head, base, body):
     with tempfile.TemporaryDirectory(prefix='bn-sync-pr-') as temporary:
         path = Path(temporary) / 'body.md'
         path.write_text(body, encoding='utf-8')
-        number = run('gh', 'pr', 'list', '--repo', repo, '--base', base,
-                     '--head', head, '--state', 'open', '--json', 'number',
-                     '--jq', '.[0].number // empty').stdout.strip()
+        if ':' in head:
+            # gh pr list does not support owner:branch in --head.
+            number = run('gh', 'api', f'repos/{repo}/pulls?base={base}&head={head}&state=open',
+                         '--jq', '.[0].number // empty').stdout.strip()
+        else:
+            number = run('gh', 'pr', 'list', '--repo', repo, '--base', base,
+                         '--head', head, '--state', 'open', '--json', 'number',
+                         '--jq', '.[0].number // empty').stdout.strip()
         if number:
             run('gh', 'pr', 'edit', number, '--repo', repo, '--body-file', str(path))
             return number
@@ -47,7 +52,9 @@ def incoming_branch(sha):
         if not run('git', 'push', 'origin', f'{sha}:refs/heads/{branch}',
                    check=False).returncode:
             return branch
-    raise RuntimeError('Could not publish the upstream snapshot without overwriting a branch')
+    # A bot may be unable to push upstream workflow-file changes. A cross-fork
+    # PR still exposes those changes for manual review without broader credentials.
+    return os.environ['SYNC_UPSTREAM_HEAD']
 
 
 def prepare(repo, upstream, run_id):
@@ -64,7 +71,8 @@ def prepare(repo, upstream, run_id):
         incoming = incoming_branch(plan['upstream_sha'])
         plan['incoming'] = incoming
         plan['pr'] = update_pr(repo, incoming, 'master', body(
-            plan, 'The mirror could not be fast-forwarded. Please resolve it manually.'))
+            plan, 'The mirror update was rejected. Please resolve it manually.\n\n' +
+            mirrored.stderr.strip()))
         return plan, 1
     if not run('git', 'merge-base', '--is-ancestor', plan['upstream_sha'],
                plan['base_sha'], check=False).returncode:
@@ -87,7 +95,13 @@ def prepare(repo, upstream, run_id):
         return plan, 1
     plan['candidate_sha'] = git('rev-parse', 'HEAD')
     plan['candidate_ref'] = f'sync/check-{run_id}'
-    git('push', 'origin', f"HEAD:refs/heads/{plan['candidate_ref']}")
+    published = run('git', 'push', 'origin', f"HEAD:refs/heads/{plan['candidate_ref']}",
+                    check=False)
+    if published.returncode:
+        update_pr(repo, incoming, 'ultica-bn', body(
+            plan, 'Publishing the merge failed. The BN branch was not updated.\n\n' +
+            published.stderr.strip()))
+        return plan, 1
     plan['ready'] = 'true'
     return plan, 0
 

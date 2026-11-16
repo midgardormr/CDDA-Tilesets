@@ -12,11 +12,16 @@ SCRIPT = Path(__file__).resolve().parents[1] / 'sync_bn_upstream.py'
 FAKE_GH = '''#!/usr/bin/env python3
 import json, os, sys
 from pathlib import Path
+from urllib.parse import parse_qs
 a = sys.argv[1:]
 p = Path(os.environ['FAKE_GH_STATE'])
 s = json.loads(p.read_text())
 def value(flag): return a[a.index(flag) + 1]
-if a[:2] == ['pr', 'list']:
+if a[0] == 'api':
+    q = parse_qs(a[1].split('?', 1)[1])
+    matches = [x for x in s if x['base'] == q['base'][0] and x['head'] == q['head'][0]]
+    print(matches[0]['number'] if matches else '')
+elif a[:2] == ['pr', 'list']:
     matches = [x for x in s if x['base'] == value('--base') and x['head'] == value('--head')]
     print(matches[0]['number'] if matches else '')
 elif a[:2] == ['pr', 'create']:
@@ -65,6 +70,7 @@ class UpstreamSyncTest(unittest.TestCase):
         self.env = dict(os.environ, PATH=str(binary) + os.pathsep + os.environ['PATH'],
                         FAKE_GH_STATE=str(self.state), GITHUB_REPOSITORY='owner/fork',
                         SYNC_UPSTREAM=str(self.upstream), SYNC_RUN_ID='100-1',
+                        SYNC_UPSTREAM_HEAD='upstream:master',
                         SYNC_RUN_URL='https://github.example/run/100')
         self.env.pop('GITHUB_OUTPUT', None)
 
@@ -172,6 +178,30 @@ class UpstreamSyncTest(unittest.TestCase):
         self.assertEqual(self.git(self.origin, 'rev-parse', 'ultica-bn'), self.base)
         self.assertNotEqual(changed, plan['candidate_sha'])
         self.assertIn('changed after preparation', self.prs()[0]['body'])
+
+    def test_rejected_pushes_leave_a_cross_fork_pr(self):
+        self.advance_upstream()
+        hook = self.origin / 'hooks' / 'pre-receive'
+        hook.write_text('#!/bin/sh\necho "workflow permission denied" >&2\nexit 1\n')
+        hook.chmod(0o755)
+        for _ in range(2):
+            plan = self.prepare(code=1)
+            self.assertEqual(plan['ready'], 'false')
+            self.assertEqual(self.git(self.origin, 'rev-parse', 'ultica-bn'), self.base)
+            self.assertEqual(len(self.prs()), 1)
+            self.assertEqual(self.prs()[0]['head'], 'upstream:master')
+            self.assertIn('workflow permission denied', self.prs()[0]['body'])
+
+    def test_rejected_candidate_push_updates_the_pr(self):
+        self.advance_upstream()
+        hook = self.origin / 'hooks' / 'pre-receive'
+        hook.write_text('#!/bin/sh\nwhile read old new ref; do\n'
+                        'case "$ref" in refs/heads/sync/check-*) exit 1;; esac\ndone\n')
+        hook.chmod(0o755)
+        plan = self.prepare(code=1)
+        self.assertEqual(plan['ready'], 'false')
+        self.assertEqual(self.git(self.origin, 'rev-parse', 'ultica-bn'), self.base)
+        self.assertIn('Publishing the merge failed', self.prs()[0]['body'])
 
     def test_new_attempt_updates_the_existing_pr(self):
         self.advance_upstream()
