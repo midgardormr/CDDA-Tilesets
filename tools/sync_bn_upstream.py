@@ -81,7 +81,7 @@ def prepare(repo, upstream, run_id):
     incoming = incoming_branch(plan['upstream_sha'])
     plan['incoming'] = incoming
     plan['pr'] = update_pr(repo, incoming, 'ultica-bn', body(
-        plan, 'Preparing an upstream merge. Both BN tilesets must build before promotion.'))
+        plan, 'Preparing an upstream merge. All BN tilesets must build before promotion.'))
     git('checkout', '--detach', plan['base_sha'])
     merged = run('git', '-c', 'user.name=github-actions[bot]', '-c',
                  'user.email=41898282+github-actions[bot]@users.noreply.github.com',
@@ -133,7 +133,7 @@ def finish(repo, plan, result):
         return False
     # GitHub marks the PR as merged because its head is now an ancestor of the base.
     update_pr_number(repo, plan['pr'], body(
-        plan, f"Both tilesets passed. Merged as `{plan['candidate_sha']}`."))
+        plan, f"All BN tilesets passed. Merged as `{plan['candidate_sha']}`."))
     git('push', 'origin', '--delete', plan['candidate_ref'])
     return True
 

@@ -1,6 +1,6 @@
 # UltiCa for Bright Nights
 
-This fork adapts UltiCa and ChibiUltica to [Cataclysm: Bright Nights](https://github.com/cataclysmbn/Cataclysm-BN). It is based on [I-am-Erk/CDDA-Tilesets](https://github.com/I-am-Erk/CDDA-Tilesets).
+This fork adapts UltiCa, ChibiUltica and AltiCa to [Cataclysm: Bright Nights](https://github.com/cataclysmbn/Cataclysm-BN). It is based on [I-am-Erk/CDDA-Tilesets](https://github.com/I-am-Erk/CDDA-Tilesets).
 
 BN and CDDA have diverged, and some objects in BN end up with missing or mismatched sprites. This branch fixes those gaps:
 
@@ -15,7 +15,7 @@ I also plan to add artwork specifically for BN and address things players find h
 
 ## Downloads and building
 
-Get both packs from [this fork's releases](https://github.com/midgardormr/UltiCa-BN/releases). Build instructions and notes on editing bindings are in [doc/ultica-bn.md](doc/ultica-bn.md).
+Get the three packs from [this fork's releases](https://github.com/midgardormr/UltiCa-BN/releases). Build instructions and notes on editing bindings are in [doc/ultica-bn.md](doc/ultica-bn.md).
 
 ## License
 

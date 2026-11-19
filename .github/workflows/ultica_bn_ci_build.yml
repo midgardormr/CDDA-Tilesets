@@ -6,6 +6,7 @@ on:
     paths:
       - 'gfx/UltimateCataclysm/**'
       - 'gfx/Chibi_Ultica/**'
+      - 'gfx/Altica/**'
       - 'gfx/MShockXotto+/**'
       - 'tools/compose.py'
       - 'tools/tests/**'
@@ -26,7 +27,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        tileset: [UltimateCataclysm, Chibi_Ultica]
+        tileset: [UltimateCataclysm, Chibi_Ultica, Altica]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -66,6 +67,10 @@ jobs:
         with:
           name: Chibi_Ultica-BN
           path: release/ChibiUltica
+      - uses: actions/download-artifact@v4
+        with:
+          name: Altica-BN
+          path: release/Altica
       - name: Publish versioned BN tilesets
         env:
           GH_TOKEN: ${{ github.token }}
@@ -77,13 +82,13 @@ jobs:
             echo "Release $tag already exists; leaving its files unchanged."
             exit 0
           fi
-          for tileset in UltimateCataclysm ChibiUltica; do
+          for tileset in UltimateCataclysm ChibiUltica Altica; do
             printf 'Source: https://github.com/%s\nCommit: %s\n' \
               "$GITHUB_REPOSITORY" "$GITHUB_SHA" >"$tileset/SOURCE.txt"
             zip -qr "$tileset.zip" "$tileset"
           done
-          sha256sum UltimateCataclysm.zip ChibiUltica.zip >SHA256SUMS
-          gh release create "$tag" UltimateCataclysm.zip ChibiUltica.zip SHA256SUMS \
+          sha256sum UltimateCataclysm.zip ChibiUltica.zip Altica.zip >SHA256SUMS
+          gh release create "$tag" UltimateCataclysm.zip ChibiUltica.zip Altica.zip SHA256SUMS \
             --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
             --title "UltiCa for Bright Nights (${GITHUB_SHA:0:12})" \
             --notes "Built from $GITHUB_SHA. Original artwork credits and licenses are retained in the source repository and tileset metadata." \

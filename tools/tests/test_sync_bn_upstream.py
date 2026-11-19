@@ -118,7 +118,7 @@ class UpstreamSyncTest(unittest.TestCase):
         self.assertEqual(self.git(self.origin, 'rev-parse', 'ultica-bn'), plan['candidate_sha'])
         self.assertEqual(self.git(self.origin, 'show', 'ultica-bn:bn.txt'), 'BN changes')
         self.assertEqual(self.git(self.origin, 'show', 'ultica-bn:upstream.txt'), 'new upstream artwork')
-        self.assertIn('Both tilesets passed', self.prs()[0]['body'])
+        self.assertIn('All BN tilesets passed', self.prs()[0]['body'])
         self.assertNotIn(plan['candidate_ref'], self.git(self.origin, 'branch', '--list'))
 
     def test_no_new_upstream_does_not_create_a_pr_or_candidate(self):
