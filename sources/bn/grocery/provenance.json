@@ -1,0 +1,26 @@
+{
+  "artwork": "User-approved grocery front, latest user-edited source",
+  "base_asset": "gfx/UltimateCataclysm/pngs_normal_32x32/overmap/dollarstore/dollarstore.png",
+  "ids": [
+    "s_grocery_1",
+    "s_grocery_roof_1"
+  ],
+  "pixels": [
+    32,
+    32
+  ],
+  "accent": "#556B3F",
+  "png_sha256": "e3c885daf1710ac2ca1feb9a1b9a5c5ada963c9bf10e964cdc267a02045ae554",
+  "aseprite_sha256": "e2b67c5bc61f6959759636c97eac8928100e252d56c9cf32cc04486dae8fac66",
+  "fixed_view": true,
+  "levels": [
+    0,
+    1
+  ],
+  "roof_policy": "Same complete approved building icon; not newly drawn roof-only art",
+  "not_covered": [
+    "s_grocery",
+    "s_grocery_roof"
+  ],
+  "licence": "Same licence as the UltiCa derivative base; see repository LICENSE.txt"
+}
