@@ -12,6 +12,11 @@ on:
       - 'tools/tests/**'
       - '.github/workflows/ultica_bn_ci_build.yml'
   workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish the checked batch as a release
+        type: boolean
+        default: false
   workflow_call:
     inputs:
       ref:
@@ -54,7 +59,7 @@ jobs:
 
   release:
     needs: build
-    if: github.ref == 'refs/heads/ultica-bn' && inputs.ref == ''
+    if: github.event_name == 'workflow_dispatch' && inputs.publish == true && github.ref == 'refs/heads/ultica-bn' && inputs.ref == ''
     runs-on: ubuntu-latest
     permissions:
       contents: write
