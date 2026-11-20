@@ -1,16 +1,18 @@
 {
+  "id": "house_garage6_basement",
   "fg": [
-    "otr_house_1_faceN",
-    "otr_house_1_faceW",
-    "otr_house_1_faceS",
-    "otr_house_1_faceE"
+    {
+      "sprite": "bn_basement_storage",
+      "weight": 1
+    },
+    {
+      "sprite": "bn_basement_workshop",
+      "weight": 1
+    },
+    {
+      "sprite": "bn_basement_laundry",
+      "weight": 1
+    }
   ],
-  "bg": [
-    "t_soil_center",
-    "t_soil_center",
-    "t_soil_center",
-    "t_soil_center"
-  ],
-  "rotates": true,
-  "id": "house_garage6_basement"
+  "rotates": false
 }

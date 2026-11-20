@@ -1,11 +1,18 @@
 {
   "id": "house_detatched7_basement",
   "fg": [
-    "house_park_faceN",
-    "house_park_faceW",
-    "house_park_faceS",
-    "house_park_faceE"
+    {
+      "sprite": "bn_basement_storage",
+      "weight": 1
+    },
+    {
+      "sprite": "bn_basement_workshop",
+      "weight": 1
+    },
+    {
+      "sprite": "bn_basement_laundry",
+      "weight": 1
+    }
   ],
-  "bg": "t_soil_center",
-  "rotates": true
+  "rotates": false
 }
